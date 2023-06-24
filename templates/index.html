@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+  </head>
+  <body>
+    <h1>Predict heart disease</h1>
+    <form action="{% url 'result' %}">
+      {% csrf_token %}
+
+      <p>age</p>
+      <input type="text" name="age">
+      <br>
+      
+      <p>sex</p>
+      <input type="text" name="sex">
+      <br>
+
+
+      <p>cp</p>
+      <input type="text" name="cp">
+      <br>
+
+      <p>trestbps</p>
+      <input type="text" name="trestbps">
+      <br>
+
+      <p>chol</p>
+      <input type="text" name="chol">
+      <br>
+
+      <p>fbs</p>
+      <input type="text" name="fbs">
+      <br>
+
+      <p>restecg</p>
+      <input type="text" name="restecg">
+      <br>
+      
+      <p>thalach</p>
+      <input type="text" name="thalach">
+      <br>
+      
+      <p>exang</p>
+      <input type="text" name="exang">
+      <br>
+      
+      <p>oldpeak</p>
+      <input type="text" name="oldpeak">
+      <br>
+      
+      <p>slope</p>
+      <input type="text" name="slope">
+      <br>
+      
+      <p>ca</p>
+      <input type="text" name="ca">
+      <br>
+      
+      <p>thal</p>
+      <input type="text" name="thal">
+      <br>
+
+      <input type="submit" value='Get Predictions'>
+    </form>
+  </body>
+</html>
